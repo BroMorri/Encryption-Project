@@ -2082,10 +2082,12 @@ def decrypt_text(m, d, n):
     return power(m, d, n)
 
 
+### hi this is a change
 ### The process running through the terminal
 # Takes the input and turns it into a numerical value and prints it
 # Generates keys and puts it in a list
-# The keys are put to seperate values
+# The keys are put to seperate values and then run through the encryt_text and decrypt_text functions
+
 input = input("Enter the text to be encrypted: ")
 pl = word_to_num(input)
 print("The plaintext is: ", pl)
@@ -2097,5 +2099,3 @@ enc = encrypt_text(pl, e, n)
 print("The encrypted text is: " + str(enc))
 dec = decrypt_text(enc, d, n)
 print("The decrypted text is: " + str(dec))
-dec = chr(dec)
-print(dec)
